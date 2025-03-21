@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Attendance Monitoring System</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-wrapper {
+            display: flex;
+            gap: 20px; /* Adds space between login boxes */
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #218838;
+        }
+        .forgot-password {
+            margin-top: 10px;
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+     <h1>S R K R Engineering college</h1>   
+    <h1>ATTENDANCE MANGEMENT SYSTEM</h1>
+    
+
+    <div class="login-wrapper">
+        <!-- Student Login -->
+        <div class="login-container">
+            <img src="logo1.png" alt="logo" width="200px" height="100px">
+            <h1>Student Login</h1>
+            <form action="login" method="post">
+                <input type="text" name="username" placeholder="REGD NO" required>
+                <input type="password" name="password" placeholder="PASSWORD" required>
+                <a href="student1.html" class="student"
+                <button type="submit">Login</button>
+               </a>
+            </form>
+            <div class="forgot-password" onclick="showForgotPassword()">Forgot your password?</div>
+        </div>
+
+        <!-- Parent Login -->
+        <div class="login-container">
+            <img src="logo1.png" alt="logo" width="200px" height="100px">
+            <h1>Parent Login</h1>
+            <form action="login" method="post">
+                <input type="text" name="username" placeholder="Student name" required>
+                <input type="text" name="reg" placeholder="Regd number" required>
+                <a href="parent1.html" class="parent"
+                <button type="submit">Login</button>
+            </a>
+            </form>
+            <div class="forgot-password" onclick="showForgotPassword()">Forgot your password?</div>
+        </div>
+
+        <!-- Faculty Login -->
+        <div class="login-container">
+            <img src="logo1.png" alt="logo" width="200px" height="100px">
+            <h1>Faculty Login</h1>
+            <form action="login" method="post">
+                <input type="text" name="username" placeholder="EMAIL ID" required>
+                <input type="password" name="password" placeholder="PASSWORD" required>
+                <a href="faculty1.html" class="faculty"
+                <button type="submit">Login</button>
+            </a>
+            </form>
+            <div class="forgot-password" onclick="showForgotPassword()">Forgot your password?</div>
+        </div>
+
+    </div>
+
+    <script>
+        function showForgotPassword() {
+            alert("Password recovery functionality coming soon!");
+        }
+    </script>
+
+</body>
+</html>
